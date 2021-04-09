@@ -9,10 +9,7 @@
                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
             {{ end }}
 
-            <h1>{{ .Site.Params.homeTitle }}</h1>
-            {{- with .Site.Params.homeSubtitle }}
-                <p>{{.}}</p>
-            {{- end }}
+            <p>{{ .Site.Params.homeTitle }}<br/>{{ .Site.Params.homeSubtitle }}</p>
 
             {{- with .Site.Params.social }}
                 <div>
